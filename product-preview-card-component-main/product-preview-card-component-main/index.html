@@ -6,147 +6,14 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Product preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-
-    :root {
-      --dark-cyan: hsl(158, 36%, 37%);
-      --cream: hsl(30, 38%, 92%);
-      --very-dark-blue: hsl(212, 21%, 14%);
-      --dark-grayish-blue: hsl(228, 12%, 48%);
-      --white: hsl(0, 0%, 100%);
-      font-size: 87.5%;
-    }
-
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100vw;
-      height: 100vh;
-      background-color: #F2EAE2;
-    }
-
-    .product-preview-card {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      background-color: white;
-      width: 343px;
-      height: 667px;
-      border-radius: 8px;
-    }
-
-    .product-preview-card-image {
-
-    }
-
-    .product-preview-card-image * {
-      width: 100%;
-      height: auto;
-      border-radius: 8px 8px 0px 0px;
-    }
-
-    .product-preview-card-description {
-    }
-
-    .product-preview-card-description-content {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      margin: 32px;
-    }
-
-    .product-preview-card-head {
-      font-family: Montserrat;
-      font-weight: 500;
-      letter-spacing: 5px;
-      color: var(--dark-grayish-blue)
-    }
-
-    .product-preview-card-description-content > h1 {
-      font-family: Fraunces;
-      font-weight: 700;
-      font-size: 2.5rem;
-    }
-
-    .product-preview-card-description-content > p {
-      font-family: Monserrat;
-      font-weight: 500;
-      line-height: 23px;
-      font-size: 1.2rem;
-      word-spacing: 1px;
-      color: var(--dark-grayish-blue);
-    }
-
-    .product-preview-card-product-price {
-      display: flex;
-      align-items: center;
-    }
-
-    .product-preview-card-product-price-current {
-      font-family: Fraunces;
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--dark-cyan)
-    }
-
-    .product-preview-card-product-price-original {
-      font-family: Monserrat;
-      font-size: 1rem;
-      font-weight: 500;
-      color: var(--dark-grayish-blue);
-      text-decoration-line: line-through;
-      margin-left: 16px;
-    }
-
-    .cart-button {
-      font-family: Monserrat;
-      font-size: 1rem;
-      font-weight: 500;
-      line-height: 1.5;
-      border-radius: 4px;
-      border-width: 0px;
-      background-color: var(--dark-cyan);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      padding: 0.5rem;
-      color: var(--white);
-    }
-
-    @media only screen and (min-width: 600px) {
-      .product-preview-card {
-        width: 600px;
-        height: 450px;
-        border-radius: 8px;
-        flex-direction: row;
-      }
-
-      .product-preview-card-image {
-        flex: 1 1 50%;
-      }
-
-      .product-preview-card-image * {
-        border-radius: 8px 0px 0px 8px;
-      }
-
-      .product-preview-card-description {
-        flex: 1 1 50%;
-      }
-    }
-  </style>
 </head>
 <body>
-  <main class="container">
+  <main>
     <div class="product-preview-card">
       <picture class="product-preview-card-image">
         <source media="(min-width: 600px)" srcset="images/image-product-desktop.jpg">
@@ -154,7 +21,7 @@
       </picture>
       <div class="product-preview-card-description">
         <div class="product-preview-card-description-content">
-          <div class="product-preview-card-head">PERFUME</div>
+          <div class="product-preview-card-head">perfume</div>
           <h1>Gabrielle Essence Eau De Parfum</h1>
           <p>A floral, solar and voluptuous interpretation composed by Olivier Polge,
             Perfumer-Creator for the House of CHANEL.</p>
@@ -162,9 +29,11 @@
             <span class="product-preview-card-product-price-current">
               $149.99
             </span>
-            <span class="product-preview-card-product-price-original">
-              $169.99
-            </span>
+            <del>
+              <span class="product-preview-card-product-price-original">
+                $169.99
+              </span>
+            </del>
           </div>
           <button class="cart-button">
             <img src="./images/icon-cart.svg" alt="An icon of a cart.">

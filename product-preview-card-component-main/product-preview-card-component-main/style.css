@@ -1,0 +1,131 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    font-size: 0.875rem;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #F2EAE2;
+    flex-direction: column;
+}
+
+.product-preview-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    width: 343px;
+    height: 667px;
+    border-radius: 8px;
+}
+
+.product-preview-card-image {
+
+}
+
+.product-preview-card-image * {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.product-preview-card-description {
+}
+
+.product-preview-card-description-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 32px;
+}
+
+.product-preview-card-head {
+    font-family: Montserrat;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--dark-grayish-blue)
+}
+
+.product-preview-card-description-content > h1 {
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.product-preview-card-description-content > p {
+    font-family: Monserrat;
+    font-weight: 500;
+    line-height: 23px;
+    font-size: 1rem;
+    word-spacing: 1px;
+    color: var(--dark-grayish-blue);
+}
+
+.product-preview-card-product-price {
+    display: flex;
+    align-items: center;
+}
+
+.product-preview-card-product-price-current {
+    font-family: Fraunces;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-cyan)
+}
+
+.product-preview-card-product-price-original {
+    font-family: Monserrat;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+    margin-left: 16px;
+}
+
+.cart-button {
+    font-family: Monserrat;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    border-radius: 4px;
+    border-width: 0px;
+    background-color: var(--dark-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    color: var(--white);
+}
+
+@media only screen and (min-width: 600px) {
+    .product-preview-card {
+        width: 600px;
+        height: 450px;
+        border-radius: 8px;
+        flex-direction: row;
+    }
+
+    .product-preview-card-image {
+        flex: 1 1 50%;
+    }
+
+    .product-preview-card-image * {
+        border-radius: 8px 0px 0px 8px;
+    }
+
+    .product-preview-card-description {
+        flex: 1 1 50%;
+    }
+}
