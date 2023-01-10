@@ -109,6 +109,10 @@ main {
     color: var(--white);
 }
 
+.cart-button:hover {
+    background-color: var(--dark-grayish-blue);
+}
+
 @media only screen and (min-width: 600px) {
     .product-preview-card {
         width: 600px;
