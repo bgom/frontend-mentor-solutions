@@ -1,0 +1,191 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish-red: hsl(0, 6%, 24%);
+    --c1: hsl(0, 80%, 86%);
+    --c2: hsl(0, 74%, 74%);
+    --c3: hsl(0, 0%, 100%);
+    --c4: hsl(0, 100%, 98%);
+    --gradient: linear-gradient(135deg, #FFFFFFFF 0%, #FFF5F5FF 100%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #FFFFFFFF 0%, #FFF5F5FF 100%);
+    width: 375px;
+    height: 800px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    width: 100%;
+    margin: 32px;
+}
+
+.logo > img {
+    position: relative;
+    left: 40px;
+}
+
+.card-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 64px 32px 32px 32px;
+}
+
+h1 {
+    font-family: "Josefin Sans";
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--dark-grayish-red);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+h1 > span {
+    font-family: "Josefin Sans";
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--desaturated-red);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+p {
+    font-family: "Josefin Sans";
+    font-size: 0.90rem;
+    font-weight: 400;
+    color: var(--desaturated-red);
+    text-align: center;
+    line-height: 22px;
+}
+
+form {
+    margin-top: 16px;
+    height: 32px;
+    position: relative;
+}
+
+form .email-input {
+    position: absolute;
+    border: 1px solid var(--desaturated-red);
+    border-radius: 32px;
+    padding: 12px;
+    width: 90%;
+}
+
+form .email-input::placeholder {
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    font-size: 0.90rem;
+    color: var(--desaturated-red);
+}
+
+.submit {
+    position: absolute;
+    right: 0px;
+    border: 1px solid var(--desaturated-red);
+    border-radius: 32px;
+    padding: 12px;
+    width: 64px;
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+button:hover {
+    background: var(--c1);
+}
+
+.error {
+    position: relative;
+    font-size: 0.8rem;
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    color: var(--soft-red);
+    left: 40px;
+    display: none;
+}
+
+.error-icon {
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--soft-red);
+    left: -30px;
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 15% 50% 1fr;
+        grid-template-areas:
+                "logo picture"
+                "card-content picture"
+                "card-content picture";
+        width: 1440px;
+        height: 800px;
+    }
+
+    picture {
+        grid-area: picture;
+    }
+
+    .logo {
+        grid-area: logo;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .logo > img {
+        left: 168px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .card-content {
+        grid-area: card-content;
+        margin: 0px 168px 0px 168px;
+        padding: 0px
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 4rem;
+    }
+
+    h1 > span {
+        font-size: 4rem;
+    }
+
+    p {
+        text-align: left;
+        font-size: 1rem;
+        margin-right: 60px;
+    }
+
+    .submit {
+        width: 96px;
+    }
+}
