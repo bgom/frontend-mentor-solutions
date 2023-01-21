@@ -25,7 +25,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(135deg, #FFFFFFFF 0%, #FFF5F5FF 100%);
+    background: linear-gradient(221.42deg, #FFF1F1 2.6%, #FFFFFF 96.36%);
     width: 375px;
     height: 800px;
 }
@@ -155,7 +155,7 @@ button:hover {
     .logo {
         grid-area: logo;
         padding: 0px;
-        margin: 0px;
+        margin: 64px 0px 0px 0px;
     }
 
     .logo > img {
@@ -173,6 +173,8 @@ button:hover {
     h1 {
         text-align: left;
         font-size: 4rem;
+        letter-spacing: 17px;
+        margin-top: 0px;
     }
 
     h1 > span {
@@ -183,9 +185,14 @@ button:hover {
         text-align: left;
         font-size: 1rem;
         margin-right: 60px;
+        line-height: 28px;
     }
 
     .submit {
         width: 96px;
+    }
+
+    form .email-input {
+        width: 445px;
     }
 }
