@@ -11,11 +11,11 @@ const timeoutFunc = setInterval(() => {
     formInput.style.border = "1px solid var(--desaturated-red)";
 }, 5000);
 
-sendBtn.addEventListener("click", () => {
+const validate = () => {
     let email = formInput.value
     if (!email.match(emailValidation) || email.length == 0) {
         errorMsg.style.display = "inline";
         errorIcon.style.display = "inline";
         formInput.style.border = "2px solid var(--soft-red)";
     }
-});
+}

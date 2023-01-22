@@ -30,6 +30,11 @@ main {
     height: 800px;
 }
 
+header {
+    width: 100%;
+    margin: 0px;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -41,7 +46,7 @@ main {
 
 .logo > img {
     position: relative;
-    left: 40px;
+    left: 10px;
 }
 
 .card-content {
@@ -118,11 +123,12 @@ button:hover {
 }
 
 .error {
-    position: relative;
+    position: absolute;
     font-size: 0.8rem;
     font-family: "Josefin Sans";
     font-weight: 400;
     color: var(--soft-red);
+    top: 60px;
     left: 40px;
     display: none;
 }
