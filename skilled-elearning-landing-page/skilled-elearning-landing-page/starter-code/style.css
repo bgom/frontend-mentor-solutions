@@ -1,3 +1,6 @@
+
+/* Mobile */
+
 :root {
     --grey: #666CA3;
     --black: #13183F;
@@ -89,16 +92,23 @@ footer {
 .summary-section {
     display: flex;
     flex-direction: column;
-    gap: 26px;
-    margin: 16px;
+    margin: 0px;
+    width: 100%;
 }
 
-.summary-content {
+.summary-section-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 26px;
-    width: 343px;
+    margin: 16px;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
 }
 
 .summary-section img {
@@ -130,6 +140,7 @@ footer {
     position: relative;
     background: var(--white);
     border-radius: 8px;
+    margin: 0px;
 }
 
 .course-content > img {
@@ -178,6 +189,8 @@ button {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
 
+/* Tablet */
+
 @media screen and (min-width: 768px) {
     .summary-section {
         position: relative;
@@ -188,24 +201,23 @@ button {
         margin-top: 100px;
     }
 
-    .summary-content {
+    .summary-section-content {
         margin: 16px;
     }
 
     .summary-section img {
         position: absolute;
-        width: 80vw;
+        width: 640px;
         top: -240px;
         left: 50%;
     }
 
-    .summary-section picture {
-        height: 40vw;
-        width: 0px;
+    .summary {
+        width: 398px;
     }
 
     .course, .courses-header-box {
-        width: 343px;
+        width: 339px;
     }
 
     .courses-section {
@@ -217,29 +229,35 @@ button {
         column-gap: 11px;
     }
 
-    .header-footer-content, .courses-section-content {
-        margin-left: 39px;
-        margin-right: 39px;
-    }
-
-    .summary-content {
-        margin-left: 39px;
-        margin-right: 0px;
+    .header-footer-content, .courses-section-content, .summary-section-content {
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
 }
+
+/* Desktop */
 
 @media screen and (min-width: 1440px) {
     .header-footer-content, .courses-section-content {
         margin-left: 165px;
         margin-right: 165px;
+        margin-top: 29px;
     }
 
-    .summary-content {
+    .summary-section-content {
         margin-left: 165px;
     }
 
     .summary-section {
         margin-bottom: 226px;
+    }
+
+    .summary{
+        width: 457px;
+    }
+
+    .course, .courses-header-box {
+        width: 350px;
     }
 
     .summary-section img {
