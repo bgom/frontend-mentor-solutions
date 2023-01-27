@@ -246,9 +246,10 @@ button {
 @media screen and (min-width: 1000px) {
     .summary-section img {
         position: absolute;
-        top: -300px;
-        right: -400px;
-        width: 991px;
+        top: -22vw;
+        right: -29vw;
+        width: 66vw;
+        max-width: 1500px;
     }
     .header-footer-content, .courses-section-content {
         margin-top: 29px;
@@ -293,12 +294,13 @@ button {
     }
 
     .summary-section {
-        margin-bottom: 226px;
+        margin-bottom: 15vw;
     }
 
     .summary{
-        width: 457px;
+        width: 32vw;
     }
+
 
     .course, .courses-header-box {
         display: flex;
@@ -326,6 +328,7 @@ button {
     }
 
     .header-footer-content, .courses-section-content, .summary-section-content {
-        width: 1110px;
+        width: 77vw;
+        max-width: 1600px;
     }
 }
