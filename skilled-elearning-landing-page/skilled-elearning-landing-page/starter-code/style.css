@@ -99,7 +99,7 @@ footer {
 .summary-section-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 26px;
     margin: 16px;
 }
@@ -209,7 +209,7 @@ button {
         position: absolute;
         width: 640px;
         top: -240px;
-        left: 50%;
+        right: -250px;
     }
 
     .summary {
@@ -217,7 +217,8 @@ button {
     }
 
     .course, .courses-header-box {
-        width: 339px;
+        display: flex;
+        flex: 1 1 339px;
     }
 
     .courses-section {
@@ -229,6 +230,11 @@ button {
         column-gap: 11px;
     }
 
+    .header-footer-content {
+        position: relative;
+        z-index: 1;
+    }
+
     .header-footer-content, .courses-section-content, .summary-section-content {
         margin-left: 5vw;
         margin-right: 5vw;
@@ -237,11 +243,44 @@ button {
 
 /* Desktop */
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .header-footer-content, .courses-section-content {
         margin-left: 165px;
         margin-right: 165px;
         margin-top: 29px;
+        position: relative;
+    }
+
+    h1 {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 3.5rem;
+        line-height: 71px;
+    }
+
+    h2 {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    h3 {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    button, p {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 28px;
     }
 
     .summary-section-content {
@@ -257,13 +296,13 @@ button {
     }
 
     .course, .courses-header-box {
-        width: 350px;
+        display: flex;
+        flex: 1 1 28%;
     }
 
     .summary-section img {
         position: absolute;
         top: -300px;
-        left: 50%;
         width: 991px;
     }
 
@@ -277,5 +316,10 @@ button {
 
     .summary-section picture {
         height: auto;
+    }
+
+    .header-footer-content, .courses-section-content, .summary-section-content {
+        margin-left: 11vw;
+        margin-right: 11vw;
     }
 }
