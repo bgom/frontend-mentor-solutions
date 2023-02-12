@@ -1,0 +1,26 @@
+[
+  {
+    "name": "HTML",
+    "yoe": 4
+  },
+  {
+    "name": "CSS",
+    "yoe": 4
+  },
+  {
+    "name": "JavaScript",
+    "yoe": 4
+  },
+  {
+    "name": "Accessibility",
+    "yoe": 4
+  },
+  {
+    "name": "React",
+    "yoe": 3
+  },
+  {
+    "name": "Sass",
+    "yoe": 3
+  }
+]

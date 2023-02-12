@@ -5,84 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
 <body>
-
-  adamkeyes
-
-  Nice to meet you! I'm Adam Keyes.
-
-  Based in the UK, I'm a front-end developer passionate about 
-  building accessible web apps that users love.
-
-  Contact me
-
-  HTML
-  4 Years Experience
-
-  CSS
-  4 Years Experience
-
-  JavaScript
-  4 Years Experience
-
-  Accessibility
-  4 Years Experience
-
-  React
-  3 Years Experience
-
-  Sass
-  3 Years Experience
-
-  Projects
-
-  Contact me
-
-  Design portfolio
-  HTML CSS
-  View project
-  View code
-
-  E-learning landing page
-  HTML CSS
-  View project
-  View code
-
-  Todo web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Entertainment web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Memory Game
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Art gallery showcase
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Contact
-
-  I would love to hear about your project and how I could help. Please 
-  fill in the form, and I’ll get back to you as soon as possible.
-
-  Name
-  Email
-  Message
-
-  Send message
-
-  adamkeyes
+<header>
+  <div class="container">
+    <div class="socials">
+      <div class="">adamkeyes</div>
+      <div>
+        <img>
+        <img>
+        <img>
+        <img>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <section class="hero">
+      <div class="hero-summary">
+        <h1>Nice to meet you! I'm Adam Keyes.</h1>
+        <p>Based in the UK, I'm a front-end developer passionate about
+          building accessible web apps that users love.</p>
+        <button>Contact me</button>
+      </div>
+      <picture>
+        <img src="">
+      </picture>
+    </section>
+    <section class="skills-section">
+      <ul class="skills"></ul>
+    </section>
+    <section class="projects-section">
+      <ul class="projects"></ul>
+    </section>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <section class="contact-section">
+      <div class="contact-summary">
+        <h1>Contact</h1>
+        <p>I would love to hear about your project and how I could help. Please
+          fill in the form, and I’ll get back to you as soon as possible.
+        </p>
+      </div>
+      <form onsubmit="loadSkills()" novalidate>
+        <input placeholder="NAME">
+        <input placeholder="EMAIL">
+        <input placeholder="MESSAGE">
+        <button>Send message</button>
+      </form>
+    </section>
+    <div class="socials">
+      <div class="">adamkeyes</div>
+      <div>
+        <img>
+        <img>
+        <img>
+        <img>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
+<script src="scripts/script.js"></script>
 </html>
